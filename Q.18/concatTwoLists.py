@@ -14,13 +14,13 @@ print("Final list after concatenation:", list1)
 # Approach 2: Using '+' operator inside function to concatenate lists
 def listJoin(list_1_ele, list_2_ele):
     list_1_ele = list_1_ele + list_2_ele
-    print("\nBy using concat operator")
-    print("Concatenated list is", list_1_ele)
+    return list_1_ele
 
 
 list_1 = [11, 17, 21, 56, 43]
 list_2 = [9, 19, 23, 39, 67]
-listJoin(list_1, list_2)
+result = listJoin(list_1, list_2)
+print("Concatenated list is", result)
 
 
 # Approach 3: Using built-in function extend() to concatenate elements of two lists
@@ -29,11 +29,11 @@ listJoin(list_1, list_2)
 class concatLists:
     def joinLists(self, first_list_ele, sec_list_ele):
         first_list_ele.extend(sec_list_ele)
-        print("\nUsing built-in function")
-        print("Concatenated list is", first_list_ele)
+        return first_list_ele
 
 
 first_list = [29, 19, 23, 39, 67, 3]
 sec_list = [17, 7, 54, 26, 41, 13]
 cl = concatLists()
-cl.joinLists(first_list, sec_list)
+res = cl.joinLists(first_list, sec_list)
+print("Concatenated list is", res)

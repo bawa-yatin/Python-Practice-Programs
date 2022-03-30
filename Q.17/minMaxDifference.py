@@ -6,7 +6,6 @@
 list_elements = [10, 3, 21, 53, 18, 9]
 list_elements.sort()
 diffNos = list_elements[-1] - list_elements[0]
-print("\nAfter sorting list")
 print("Difference is", diffNos)
 
 
@@ -15,11 +14,11 @@ def largeSmallDiff(list1):
     largest_ele = max(list1)
     smallest_ele = min(list1)
     result = largest_ele - smallest_ele
-    print(f"\nDifference between {largest_ele} and {smallest_ele} is {result}")
+    return f"Difference between {largest_ele} and {smallest_ele} is {result}"
 
 
 list_1 = [8, 21, 11, 32, 5, 93, 57, 48]
-largeSmallDiff(list_1)
+print(largeSmallDiff(list_1))
 
 
 # Approach 3: Using for loop inside a method defined in a class
@@ -34,10 +33,9 @@ class maxMinDiff:
             elif list2[i] < small_element:
                 small_element = list2[i]
         nos_diff = large_element - small_element
-        print("\nUsing for loop inside class")
-        print(f"Difference between {large_element} and {small_element} is {nos_diff}")
+        return f"Difference between {large_element} and {small_element} is {nos_diff}"
 
 
 list_2 = [17, 7, 54, 26, 41, 13]
 md = maxMinDiff()
-md.diffLargeSmall(list_2)
+print(md.diffLargeSmall(list_2))

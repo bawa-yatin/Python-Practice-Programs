@@ -29,8 +29,9 @@ class calcSumofNos:
 
     def nosAdd(self):
         print("\nUsing Classes")
-        print(f'Sum of numbers is {self.val1 + self.val2}')
+        return f'Sum of numbers is {self.val1 + self.val2}'
 
 
 cs1 = calcSumofNos(4, 13)
-cs1.nosAdd()
+res1 = cs1.nosAdd()
+print(res1)

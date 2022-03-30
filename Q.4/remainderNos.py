@@ -12,10 +12,11 @@ print("Remainder of", num_1, "and", num_2, "is", res)
 def remNos(val1, val2):
     print("\nUsing Functions")
     result = val1 % val2
-    print("Remainder of", val1, "and", val2, "is", result)
+    return result
 
 
-remNos(15, 8)
+res1 = remNos(15, 8)
+print("Remainder is", res1)
 
 # Approach 3: Using in-built divmod() function
 # This function takes two numbers as parameters and returns a tuple containing
