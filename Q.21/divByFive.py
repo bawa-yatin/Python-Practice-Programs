@@ -3,14 +3,17 @@
 # Approach 1: Using Function
 
 def checkDivisible():
-    num_1 = int(input("Enter any positive number: "))
-    if num_1 < 0:
-        print("Invalid Value")
-    else:
-        if num_1 % 5 == 0:
-            return True
+    try:
+        num_1 = int(input("Enter any positive number: "))
+        if num_1 < 0:
+            print("Invalid Value")
         else:
-            return False
+            if num_1 % 5 == 0:
+                return True
+            else:
+                return False
+    except ValueError:
+        print("Provide numeric value only!")
 
 
 result = checkDivisible()

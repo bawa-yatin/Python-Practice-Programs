@@ -1,11 +1,17 @@
 # Python Program to find the remainder of two numbers
 
 # Approach 1
-num_1 = int(input("Enter first number: "))
-num_2 = int(input("Enter second number: "))
 
-res = num_1 % num_2
-print("Remainder of", num_1, "and", num_2, "is", res)
+try:
+    num_1 = int(input("Enter first number: "))
+    num_2 = int(input("Enter second number: "))
+
+    res = num_1 % num_2
+    print("Remainder of", num_1, "and", num_2, "is", res)
+except ValueError:
+    print("Provide numeric value only!")
+except ZeroDivisionError:
+    print("Division by 0 not possible!")
 
 
 # Approach 2: Using Functions

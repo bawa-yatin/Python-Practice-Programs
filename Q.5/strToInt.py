@@ -2,16 +2,19 @@
 
 # Approach 1:
 
-input_val = input("Enter any numeric value: ")
-print(type(input_val))
-new_type = int(input_val)
-print(type(new_type))
+try:
+    input_val = input("Enter any numeric value: ")
+    print(type(input_val))
+    new_type = int(input_val)
+    print(type(new_type))
+except ValueError:
+    print("Provide numeric value only!")
 
 
 # Approach 2: Using Function
 def strConvert(val):
     print("\nUsing Functions")
-    print("Original type is",type(val))
+    print("Original type is", type(val))
     updated_type = int(val)
     return updated_type
 

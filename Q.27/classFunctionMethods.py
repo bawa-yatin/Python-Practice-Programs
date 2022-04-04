@@ -4,7 +4,10 @@
 def twoMethods():
     def getString():
         user_name = input("Enter user name: ")
-        printString(user_name)
+        if user_name.isalpha():
+            printString(user_name)
+        else:
+            print("Invalid User Name!")
 
     def printString(name):
         print("Name of user is:", name.upper())
@@ -24,7 +27,10 @@ class userInfo:
         self.uname = input("Enter a name: ")
 
     def printString(self):
-        print("Name of user is:", self.uname.upper())
+        if self.uname.isalpha():
+            print("Name of user is:", self.uname.upper())
+        else:
+            print("Invalid User Name!")
 
 
 ui = userInfo()

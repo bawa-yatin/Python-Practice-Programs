@@ -10,7 +10,10 @@ def getDayFromDate(day_date, day_month, day_year):
     return days[day_number]
 
 
-date_val = input("Enter date in DD-MM-YYYY format: ")
-date, month, year = map(int, date_val.split("-"))
-result = getDayFromDate(date, month, year)
-print(f'Day on {date_val} was {result}')
+try:
+    date_val = input("Enter date in DD-MM-YYYY format: ")
+    date, month, year = map(int, date_val.split("-"))
+    result = getDayFromDate(date, month, year)
+    print(f'Day on {date_val} was {result}')
+except ValueError:
+    print("Date not in proper format!")

@@ -2,13 +2,19 @@
 
 # Approach 1
 
-hours = int(input("Enter number of hours: "))
-minutes = int(input("Enter number of minutes: "))
+try:
+    hours = int(input("Enter number of hours: "))
+    minutes = int(input("Enter number of minutes: "))
 
-hour_seconds = hours * 3600
-min_seconds = minutes * 60
-total_seconds = hour_seconds + min_seconds
-print("Total seconds in", hours, "hours and", minutes, "minutes is", total_seconds)
+    if hours >= 1 and minutes >= 1:
+        hour_seconds = hours * 3600
+        min_seconds = minutes * 60
+        total_seconds = hour_seconds + min_seconds
+        print("Total seconds in", hours, "hours and", minutes, "minutes is", total_seconds)
+    else:
+        print("Invalid Value")
+except ValueError:
+    print("Provide numeric value only!")
 
 
 # Approach 2: Using Functions
@@ -35,5 +41,5 @@ class calcTimeInSeconds:
         print(f'Total Seconds are {(self.hrs * 3600) + (self.min * 60)}')
 
 
-c1 = calcTimeInSeconds(3,15)
+c1 = calcTimeInSeconds(3, 15)
 c1.getSeconds()

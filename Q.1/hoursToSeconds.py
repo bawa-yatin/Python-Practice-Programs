@@ -2,10 +2,15 @@
 from datetime import timedelta
 
 # Approach 1
-
-hours = int(input("Enter number of hours: "))
-seconds = hours * 60 * 60
-print(hours, "hrs have", seconds, "seconds")
+try:
+    hours = int(input("Enter number of hours: "))
+    if hours >= 1:
+        seconds = hours * 60 * 60
+        print(hours, "hrs have", seconds, "seconds")
+    else:
+        print("Invalid Value!")
+except ValueError:
+    print("Provide numeric value only!")
 
 
 # Approach 2: Using Functions

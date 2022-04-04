@@ -27,6 +27,6 @@ class numPower:
         return pow(self.base, self.exponent)
 
 
-np = numPower(5,3)
+np = numPower(5, 3)
 num_power = np.noPower()
 print(num_power)

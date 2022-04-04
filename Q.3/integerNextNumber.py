@@ -1,13 +1,15 @@
 # Python Program to return the next number from the integer passed
 
 # Approach 1
-num_1 = int(input("Enter a number: "))
-if num_1 >= 0:
-    num_1 += 1
-else:
-    print("Please enter a valid number")
-
-print("Next number in the sequence is", num_1)
+try:
+    num_1 = int(input("Enter a number: "))
+    if num_1 >= 0:
+        num_1 += 1
+        print("Next number in the sequence is", num_1)
+    else:
+        print("Please enter a valid number")
+except ValueError:
+    print("Provide numeric value only!")
 
 
 # Approach 2: Using Functions

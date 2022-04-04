@@ -2,8 +2,8 @@ def pointsCalculate(win, loss, draw):
     won = win * 3
     lose = loss * 0
     drawn = draw * 1
-    totalScore = won + lose + drawn
-    return totalScore
+    total_score = won + lose + drawn
+    return total_score
 
 
 team_1 = pointsCalculate(7, 4, 1)

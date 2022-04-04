@@ -3,20 +3,27 @@
 from datetime import datetime
 
 # Approach 1:
-user_age = int(input("Enter any age: "))
-current_year = datetime.now().year
-birth_year = current_year - user_age
 
-leap_year_count = 0
-for i in range(1, user_age + 1):
-    temp = birth_year
-    if (temp % 400 == 0) and (temp % 100 == 0):
-        leap_year_count += 1
-    elif (temp % 4 == 0) and (temp % 100 != 0):
-        leap_year_count += 1
+try:
+    user_age = int(input("Enter any age: "))
+    if user_age >= 1:
+        current_year = datetime.now().year
+        birth_year = current_year - user_age
 
-total_age_days = ((user_age - leap_year_count) * 365) + (leap_year_count * 366)
-print(total_age_days)
+        leap_year_count = 0
+        for i in range(1, user_age + 1):
+            temp = birth_year
+            if (temp % 400 == 0) and (temp % 100 == 0):
+                leap_year_count += 1
+            elif (temp % 4 == 0) and (temp % 100 != 0):
+                leap_year_count += 1
+
+        total_age_days = ((user_age - leap_year_count) * 365) + (leap_year_count * 366)
+        print(total_age_days)
+    else:
+        print("Invalid Age!")
+except ValueError:
+    print("Provide numeric value only!")
 
 
 # Approach 2: Using Function

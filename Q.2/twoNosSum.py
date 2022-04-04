@@ -2,11 +2,14 @@
 
 # Approach 1
 
-num_1 = int(input("Enter the first number: "))
-num_2 = int(input("Enter the second number: "))
+try:
+    num_1 = int(input("Enter the first number: "))
+    num_2 = int(input("Enter the second number: "))
 
-nosSum = num_1 + num_2
-print("Sum of numbers is:", nosSum)
+    nosSum = num_1 + num_2
+    print("Sum of numbers is:", nosSum)
+except ValueError:
+    print("Provide numeric value only!")
 
 
 # Approach 2: Using Function
