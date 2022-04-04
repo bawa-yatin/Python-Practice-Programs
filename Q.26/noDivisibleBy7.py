@@ -16,7 +16,9 @@ def eleDivBy7(start, end):
     return [j for j in range(start, end + 1) if j % 7 == 0 and j % 5 != 0]
 
 
-res = eleDivBy7(1500, 3000)
+start_val = int(input("Enter the starting value: "))
+end_val = int(input("Enter the ending value: "))
+res = eleDivBy7(start_val, end_val)
 print(res)
 
 
@@ -30,6 +32,8 @@ class divisibleNum:
         return [j for j in range(self.start, self.end + 1) if j % 7 == 0 and j % 5 != 0]
 
 
-dn = divisibleNum(1200, 2400)
+start_limit = int(input("Enter the starting limit: "))
+end_limit = int(input("Enter the ending limit: "))
+dn = divisibleNum(start_limit, end_limit)
 result = dn.getNoDivisibleBy7()
 print(result)

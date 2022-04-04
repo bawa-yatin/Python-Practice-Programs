@@ -11,7 +11,10 @@ def findMonthFriday(month, year):
         return "No this month doesn't have Friday 13th!"
 
 
-month = int(input("Enter a month: "))
-year = int(input("Enter a year: "))
-res = findMonthFriday(month, year)
-print(res)
+try:
+    month = int(input("Enter a month: "))
+    year = int(input("Enter a year: "))
+    res = findMonthFriday(month, year)
+    print(res)
+except ValueError:
+    print("Invalid Value!")

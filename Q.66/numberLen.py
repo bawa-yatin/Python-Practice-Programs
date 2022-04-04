@@ -6,6 +6,9 @@ def numLen(val1):
     return num_len
 
 
-num_val = int(input("Enter any positive integer: "))
-result = numLen(num_val)
-print("Length of Number:", result)
+try:
+    num_val = int(input("Enter any positive integer: "))
+    result = numLen(num_val)
+    print("Length of Number:", result)
+except ValueError:
+    print("Provide a numeric value only!")
