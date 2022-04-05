@@ -1,21 +1,21 @@
 # Python Program to define a class/function which has at least two methods
 
 # Approach 1: Using Function
-def twoMethods():
-    def getString():
+def two_methods():
+    def get_string():
         user_name = input("Enter user name: ")
-        if user_name.isalpha():
-            printString(user_name)
-        else:
+        if user_name.isdigit():
             print("Invalid User Name!")
+        else:
+            print_string(user_name)
 
-    def printString(name):
+    def print_string(name):
         print("Name of user is:", name.upper())
 
-    getString()
+    get_string()
 
 
-twoMethods()
+two_methods()
 
 
 # Approach 2: Using Class
@@ -23,10 +23,10 @@ class userInfo:
     def __init__(self):
         self.uname = None
 
-    def getString(self):
+    def get_string(self):
         self.uname = input("Enter a name: ")
 
-    def printString(self):
+    def print_string(self):
         if self.uname.isalpha():
             print("Name of user is:", self.uname.upper())
         else:
@@ -34,5 +34,5 @@ class userInfo:
 
 
 ui = userInfo()
-ui.getString()
-ui.printString()
+ui.get_string()
+ui.print_string()

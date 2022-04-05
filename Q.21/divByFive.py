@@ -2,7 +2,7 @@
 
 # Approach 1: Using Function
 
-def checkDivisible():
+def check_divisible():
     try:
         num_1 = int(input("Enter any positive number: "))
         if num_1 < 0:
@@ -16,7 +16,7 @@ def checkDivisible():
         print("Provide numeric value only!")
 
 
-result = checkDivisible()
+result = check_divisible()
 if result is not None:
     print(result)
 
@@ -26,7 +26,7 @@ class divCheck:
     def __init__(self, value):
         self.value = value
 
-    def numDivisible(self):
+    def num_divisible(self):
         if self.value < 0:
             print("Invalid Value")
         else:
@@ -37,6 +37,6 @@ class divCheck:
 
 
 dc = divCheck(37)
-res = dc.numDivisible()
+res = dc.num_divisible()
 if res is not None:
     print(res)

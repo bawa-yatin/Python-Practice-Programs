@@ -22,7 +22,7 @@ print("Total Lowercase Letters:", lower_letters)
 
 
 # Approach 2: Using Function
-def countLetterDigit(val):
+def count_letter_digit(val):
     digit_count = letter_count = upper_letter_count = lower_letter_count = 0
 
     for i in val:
@@ -42,11 +42,11 @@ def countLetterDigit(val):
 
 
 value = input("Enter a string: ")
-countLetterDigit(value)
+count_letter_digit(value)
 
 
 class letterDigitCount:
-    def getCount(self, value):
+    def get_count(self, value):
         digit_count = letter_count = upper_letter_count = lower_letter_count = 0
 
         for i in value:
@@ -67,4 +67,4 @@ class letterDigitCount:
 
 str1 = input("Enter a string: ")
 ldc = letterDigitCount()
-ldc.getCount(str1)
+ldc.get_count(str1)

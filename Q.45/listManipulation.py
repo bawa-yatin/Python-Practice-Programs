@@ -1,4 +1,4 @@
-def listOperations(list_items):
+def list_operations(list_items):
     print("Before Deleting Element:", list_items)
     list_items.pop(4)
     print("List After removing element at index 4", list_items)
@@ -9,4 +9,4 @@ def listOperations(list_items):
 
 
 list_1 = [34, 54, 67, 89, 43, 94, 13]
-listOperations(list_1)
+list_operations(list_1)

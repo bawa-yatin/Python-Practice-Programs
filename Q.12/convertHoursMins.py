@@ -19,14 +19,14 @@ except ValueError:
 
 # Approach 2: Using Functions
 
-def convertHoursMinToSeconds(hour, minute):
+def convert_hours_min_to_seconds(hour, minute):
     print("\nUsing Function for converting hours and minutes to seconds")
     hour_second = hour * 3600
     min_second = minute * 60
     print(f"Total seconds are {hour_second + min_second}")
 
 
-convertHoursMinToSeconds(3, 20)
+convert_hours_min_to_seconds(3, 20)
 
 
 # Approach 3: Using Classes and Objects
@@ -36,10 +36,10 @@ class calcTimeInSeconds:
         self.hrs = hrs
         self.min = min
 
-    def getSeconds(self):
+    def get_seconds(self):
         print("\nUsing Class and Objects for converting hours and minutes to seconds")
         print(f'Total Seconds are {(self.hrs * 3600) + (self.min * 60)}')
 
 
 c1 = calcTimeInSeconds(3, 15)
-c1.getSeconds()
+c1.get_seconds()

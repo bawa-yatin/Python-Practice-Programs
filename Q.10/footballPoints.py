@@ -1,4 +1,4 @@
-def pointsCalculate(win, loss, draw):
+def points_calculate(win, loss, draw):
     won = win * 3
     lose = loss * 0
     drawn = draw * 1
@@ -6,8 +6,8 @@ def pointsCalculate(win, loss, draw):
     return total_score
 
 
-team_1 = pointsCalculate(7, 4, 1)
-team_2 = pointsCalculate(6, 3, 3)
+team_1 = points_calculate(7, 4, 1)
+team_2 = points_calculate(6, 3, 3)
 
 print("Points scored by Team 1 are", team_1)
 print("Points scored by Team 2 are", team_2)

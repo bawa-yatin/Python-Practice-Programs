@@ -17,7 +17,7 @@ print("Words in string are:", word_list)
 
 # Approach 2: Using Function
 
-def getDigitsOnly():
+def get_digits_only():
     str_val = input("Enter a string with some digits: ")
     str_val = str_val.split()
     list_digit = []
@@ -32,4 +32,4 @@ def getDigitsOnly():
     print("Words in string are:", list_word)
 
 
-getDigitsOnly()
+get_digits_only()

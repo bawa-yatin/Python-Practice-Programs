@@ -3,7 +3,7 @@
 
 # Approach 1: Using for loop inside a method defined in a class
 class maxMinDiff:
-    def diffLargeSmall(self, list2):
+    def diff_large_small(self, list2):
         large_element = list2[0]
         small_element = list2[0]
 
@@ -18,7 +18,7 @@ class maxMinDiff:
 
 list_2 = [17, 7, 54, 26, 41, 13]
 md = maxMinDiff()
-print(md.diffLargeSmall(list_2))
+print(md.diff_large_small(list_2))
 
 # Approach 2: Sorting the list in ascending order and accessing the first and last
 # element in the list to find out the difference.
@@ -29,7 +29,7 @@ print("Difference is", diffNos)
 
 
 # Approach 3: Using built-in function min() and max()
-def largeSmallDiff(list1):
+def large_small_diff(list1):
     largest_ele = max(list1)
     smallest_ele = min(list1)
     result = largest_ele - smallest_ele
@@ -37,4 +37,4 @@ def largeSmallDiff(list1):
 
 
 list_1 = [8, 21, 11, 32, 5, 93, 57, 48]
-print(largeSmallDiff(list_1))
+print(large_small_diff(list_1))

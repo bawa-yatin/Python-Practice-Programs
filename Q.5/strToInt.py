@@ -12,14 +12,14 @@ except ValueError:
 
 
 # Approach 2: Using Function
-def strConvert(val):
+def str_convert(val):
     print("\nUsing Functions")
     print("Original type is", type(val))
     updated_type = int(val)
     return updated_type
 
 
-sc = strConvert("76")
+sc = str_convert("76")
 print(sc)
 print("New Type is", type(sc))
 
@@ -29,7 +29,7 @@ class convertStr:
     def __init__(self, value):
         self.value = value
 
-    def getIntVal(self):
+    def get_int_val(self):
         print("\nUsing Class")
         print(self.value)
         print(type(self.value))
@@ -38,6 +38,6 @@ class convertStr:
 
 
 cs = convertStr("27")
-result = cs.getIntVal()
+result = cs.get_int_val()
 print(result)
 print("New Type is", type(result))

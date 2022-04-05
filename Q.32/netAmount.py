@@ -13,7 +13,7 @@ print("Total Amount is", amount)
 
 
 # Approach 2: Using Function
-def calcAmount(ele):
+def calc_amount(ele):
     amt = 0
     for j in range(len(ele)):
         if ele[j] == 'D':
@@ -26,7 +26,7 @@ def calcAmount(ele):
 
 trans_log_2 = input("Enter the transaction log: ")
 item = trans_log_2.split(" ")
-obj1 = calcAmount(item)
+obj1 = calc_amount(item)
 print("Total Amount is", obj1)
 
 
@@ -35,7 +35,7 @@ class countAmt:
     def __init__(self, log):
         self.log = log
 
-    def getAmt(self):
+    def get_amt(self):
         amt = 0
         for j in range(len(self.log)):
             if self.log[j] == 'D':
@@ -49,5 +49,5 @@ trans_log_3 = input("Enter the transaction log: ")
 item2 = trans_log_3.split(" ")
 
 ca = countAmt(item2)
-obj2 = ca.getAmt()
+obj2 = ca.get_amt()
 print("Total Amount is", obj2)

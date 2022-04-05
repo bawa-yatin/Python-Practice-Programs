@@ -15,13 +15,13 @@ except ValueError:
 
 # Approach 2: Using Functions
 
-def convertHoursToSeconds(hour):
+def convert_hours_to_seconds(hour):
     print("\nUsing Function for converting hours to seconds")
     second = hour * 60 * 60
     print("Seconds:", second)
 
 
-convertHoursToSeconds(3)
+convert_hours_to_seconds(3)
 
 
 # Approach 3: Using Classes and Objects
@@ -30,12 +30,12 @@ class calcTimeInSeconds:
     def __init__(self, hour):
         self.hour = hour
 
-    def getSeconds(self):
+    def get_seconds(self):
         print(f'\nSeconds in {self.hour} hours are {self.hour * 60 * 60}')
 
 
 c1 = calcTimeInSeconds(4)
-c1.getSeconds()
+c1.get_seconds()
 
 # Approach 4: Using datetime module
 hours = timedelta(hours=5)

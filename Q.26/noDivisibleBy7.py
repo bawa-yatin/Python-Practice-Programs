@@ -15,14 +15,14 @@ except ValueError:
 
 
 # Approach 2: Using Function
-def eleDivBy7(start, end):
+def ele_div_by_7(start, end):
     return [j for j in range(start, end + 1) if j % 7 == 0 and j % 5 != 0]
 
 
 try:
     start_val = int(input("Enter the starting value: "))
     end_val = int(input("Enter the ending value: "))
-    res = eleDivBy7(start_val, end_val)
+    res = ele_div_by_7(start_val, end_val)
     print(res)
 except ValueError:
     print("Provide numeric value only!")
@@ -34,7 +34,7 @@ class divisibleNum:
         self.start = start
         self.end = end
 
-    def getNoDivisibleBy7(self):
+    def get_no_divisible_by_7(self):
         return [j for j in range(self.start, self.end + 1) if j % 7 == 0 and j % 5 != 0]
 
 
@@ -42,7 +42,7 @@ try:
     start_limit = int(input("Enter the starting limit: "))
     end_limit = int(input("Enter the ending limit: "))
     dn = divisibleNum(start_limit, end_limit)
-    result = dn.getNoDivisibleBy7()
+    result = dn.get_no_divisible_by_7()
     print(result)
 except ValueError:
     print("Provide numeric value only!")

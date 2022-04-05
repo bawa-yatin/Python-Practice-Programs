@@ -15,13 +15,16 @@ except ZeroDivisionError:
 
 
 # Approach 2: Using Functions
-def remNos(val1, val2):
+def rem_nos(val1, val2):
     print("\nUsing Functions")
-    result = val1 % val2
-    return result
+    if val1 >= 1 and val2 >= 1:
+        result = val1 % val2
+        return result
+    else:
+        print("Invalid Value!")
 
 
-res1 = remNos(15, 8)
+res1 = rem_nos(15, 8)
 print("Remainder is", res1)
 
 # Approach 3: Using in-built divmod() function

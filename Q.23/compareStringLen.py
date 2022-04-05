@@ -1,7 +1,7 @@
 # Python Program to compare strings by count of characters
 
 # Approach 1: Using len() function
-def strCompare(str1, str2):
+def str_compare(str1, str2):
     if len(str1) == len(str2):
         return True
     else:
@@ -10,12 +10,12 @@ def strCompare(str1, str2):
 
 str_1 = input("Enter first string: ")
 str_2 = input("Enter second string: ")
-res = strCompare(str_1, str_2)
+res = str_compare(str_1, str_2)
 print("Result is", res)
 
 
 # Approach 2: Using For Loop
-def strCompare2(string1, string2):
+def str_compare_2(string1, string2):
     total_1 = 0
     total_2 = 0
     for i in range(len(string1)):
@@ -28,12 +28,12 @@ def strCompare2(string1, string2):
         return False
 
 
-res = strCompare("Hello", "Adam")
+res = str_compare_2("Hello", "Adam")
 print("Result is", res)
 
 
 # Approach 3: Using While Loop
-def strCompare3(val1, val2):
+def str_compare_3(val1, val2):
     sum_1 = 0
     sum_2 = 0
     for i in range(len(val1)):
@@ -46,5 +46,5 @@ def strCompare3(val1, val2):
         return False
 
 
-res = strCompare("Apple", "Mango")
+res = str_compare_3("Apple", "Mango")
 print("Result is", res)

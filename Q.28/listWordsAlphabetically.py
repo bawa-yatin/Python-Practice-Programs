@@ -8,18 +8,18 @@ print(data_items)
 
 
 # Approach 2: Using Function
-def sortListItems(items):
+def sort_list_items(items):
     sorted_list = sorted(items)
     print(sorted_list)
 
 
 fruit_items = ["Mango", "Apple", "Cherry", "Watermelon", "Grapes"]
-sortListItems(fruit_items)
+sort_list_items(fruit_items)
 
 
 # Approach 3: Using Class
 class itemsSort:
-    def getSortedItems(self, list_items):
+    def get_sorted_items(self, list_items):
         items_sorted = sorted(list_items)
         return items_sorted
 
@@ -27,5 +27,5 @@ class itemsSort:
 # Here words starting with uppercase letter will be given more preference
 data = ['Elle', 'miles', 'kratos', 'Joel', 'peter', 'Nathan']
 obj1 = itemsSort()
-res = obj1.getSortedItems(data)
+res = obj1.get_sorted_items(data)
 print(res)

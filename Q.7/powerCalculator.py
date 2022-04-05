@@ -7,11 +7,11 @@ print(power_result)
 
 
 # Approach 2- Using Function
-def calcPowerNum(base, exponent):
+def calc_power_num(base, exponent):
     return base ** exponent
 
 
-res = calcPowerNum(4, 3)
+res = calc_power_num(4, 3)
 print(res)
 
 
@@ -23,10 +23,10 @@ class numPower:
         self.base = num_base
         self.exponent = num_exponent
 
-    def noPower(self):
+    def no_power(self):
         return pow(self.base, self.exponent)
 
 
 np = numPower(5, 3)
-num_power = np.noPower()
+num_power = np.no_power()
 print(num_power)

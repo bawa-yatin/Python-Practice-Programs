@@ -1,11 +1,11 @@
-def convertList(items):
+def convert_lists(items):
     iter_var = iter(items)
     res_dict = dict(zip(iter_var, iter_var))
     return res_dict
 
 
 list_item = ['Name', 'Rohan', 'Age', 28, 'Code', 165]
-res = convertList(list_item)
+res = convert_lists(list_item)
 print("Converted List into Dictionary")
 print(res)
 

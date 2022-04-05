@@ -5,7 +5,7 @@
 
 # Approach 1: Basic Approach
 
-def compareObj(list1, list2):
+def compare_obj(list1, list2):
     # Checks the value of both objects
     if list1 == list2:
         return True
@@ -15,12 +15,12 @@ def compareObj(list1, list2):
 
 list_1 = ["apple", "orange", "banana", "watermelon"]
 list_2 = ["apple", "orange", "banana", "watermelon"]
-result = compareObj(list_1, list_2)
+result = compare_obj(list_1, list_2)
 print(result)
 
 
 # Approach 2: Using Function
-def objCompare(first, second):
+def obj_compare(first, second):
     third = first
     if first is third:
         return True
@@ -30,5 +30,5 @@ def objCompare(first, second):
 
 list1 = [20, 40, 80, 90]
 list2 = [20, 40, 80, 90, 105]
-res = objCompare(list1, list2)
+res = obj_compare(list1, list2)
 print(res)

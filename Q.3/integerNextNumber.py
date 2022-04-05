@@ -13,7 +13,7 @@ except ValueError:
 
 
 # Approach 2: Using Functions
-def nextNumber(num1):
+def next_number(num1):
     if num1 >= 0:
         result = num1 + 1
         return result
@@ -21,7 +21,7 @@ def nextNumber(num1):
         return "Please enter a valid number"
 
 
-res = nextNumber(9)
+res = next_number(9)
 print("\nUsing Functions")
 print("Next number is", res)
 
@@ -32,7 +32,7 @@ class nextNo:
     def __init__(self, val1):
         self.val1 = val1
 
-    def sequenceNextNo(self):
+    def sequence_next_no(self):
         if self.val1 >= 0:
             result = self.val1 + 1
             return result
@@ -41,7 +41,7 @@ class nextNo:
 
 
 n1 = nextNo(61)
-res1 = n1.sequenceNextNo()
+res1 = n1.sequence_next_no()
 
 print("\nUsing Classes")
 print("Next number is", res1)

@@ -28,7 +28,7 @@ except ValueError:
 
 # Approach 2: Using Function
 
-def calculateAgeInDays(age):
+def calculate_age_in_days(age):
     present_year = datetime.now().year
     user_birth_year = present_year - age
 
@@ -45,7 +45,7 @@ def calculateAgeInDays(age):
     print(total_days)
 
 
-calculateAgeInDays(33)
+calculate_age_in_days(33)
 
 
 # Approach 3: Using Class
@@ -54,7 +54,7 @@ class calculateAgeDays:
     def __init__(self, age_user):
         self.age_user = age_user
 
-    def getAgeDays(self):
+    def get_age_days(self):
         present_year = datetime.now().year
         user_birth_year = present_year - self.age_user
 
@@ -72,4 +72,4 @@ class calculateAgeDays:
 
 
 cd = calculateAgeDays(18)
-cd.getAgeDays()
+cd.get_age_days()

@@ -12,7 +12,7 @@ print(squared_ele)
 
 
 # Approach 2: Using Function and exponent operator
-def oddNoSquare(items):
+def odd_no_square(items):
     new_list = []
     for j in items:
         if j % 2 != 0:
@@ -22,13 +22,13 @@ def oddNoSquare(items):
 
 list2 = [11, 52, 45, 82, 31, 7, 17, 98, 102, 151, 501, 56, 397, 652, 71, 199,
          218, 56, 6, 787]
-res = oddNoSquare(list2)
+res = odd_no_square(list2)
 print(res)
 
 
 # Approach 3: Using Class and pow() method
 class squareOddItem:
-    def getOddItemsSquare(self, ele):
+    def get_odd_items_square(self, ele):
         new_list = []
         for j in ele:
             if j % 2 != 0:
@@ -39,5 +39,5 @@ class squareOddItem:
 list3 = [41, 52, 45, 82, 31, 17, 28, 98, 102, 151, 501, 56, 397, 652, 71, 199,
          218, 56, 16, 187]
 obj1 = squareOddItem()
-result = obj1.getOddItemsSquare(list3)
+result = obj1.get_odd_items_square(list3)
 print(result)

@@ -6,20 +6,20 @@ try:
     num_1 = int(input("Enter the first number: "))
     num_2 = int(input("Enter the second number: "))
 
-    nosSum = num_1 + num_2
-    print("Sum of numbers is:", nosSum)
+    nos_sum = num_1 + num_2
+    print("Sum of numbers is:", nos_sum)
 except ValueError:
     print("Provide numeric value only!")
 
 
 # Approach 2: Using Function
 
-def addNos(num1, num2):
+def add_nos(num1, num2):
     print("\nUsing Functions")
     return f'Sum of Numbers is: {num1 + num2}'
 
 
-result = addNos(12, 9)
+result = add_nos(12, 9)
 print(result)
 
 
@@ -30,11 +30,11 @@ class calcSumofNos:
         self.val1 = val1
         self.val2 = val2
 
-    def nosAdd(self):
+    def nos_add(self):
         print("\nUsing Classes")
         return f'Sum of numbers is {self.val1 + self.val2}'
 
 
 cs1 = calcSumofNos(4, 13)
-res1 = cs1.nosAdd()
+res1 = cs1.nos_add()
 print(res1)

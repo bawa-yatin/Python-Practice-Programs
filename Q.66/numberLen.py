@@ -1,4 +1,4 @@
-def numLen(val1):
+def num_len(val1):
     str_val = str(val1)
     num_len = 0
     for i in str_val:
@@ -8,7 +8,7 @@ def numLen(val1):
 
 try:
     num_val = int(input("Enter any positive integer: "))
-    result = numLen(num_val)
+    result = num_len(num_val)
     print("Length of Number:", result)
 except ValueError:
     print("Provide a numeric value only!")
