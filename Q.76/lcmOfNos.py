@@ -1,5 +1,9 @@
+
+# Python program that returns the least common multiple (LCM) of two integers
+
 # Approach 1: Basic Approach
 
+# User-defined function to calculate LCM of the numbers provided
 def get_lcm(val1, val2):
     if val1 > val2:
         max_val = val1
@@ -13,6 +17,9 @@ def get_lcm(val1, val2):
     return lcm
 
 
+# Executed try-except block to check whether the values provided are numeric in nature
+# or not. Also using an if-else condition to check whether the values provided are
+# greater than 0 or not
 try:
     num_1 = int(input("Enter first positive integer: "))
     num_2 = int(input("Enter second positive integer: "))
@@ -28,17 +35,22 @@ except ValueError:
 
 # Approach 2: Using GCD
 
+# User-defined function to calculate GCD of the numbers provided
 def calculate_gcd(x, y):
     while y:
         x, y = y, x % y
     return x
 
 
+# User-defined function to calculate LCM of the numbers provided
 def calculate_lcm(num1, num2):
     lcm = (num1 * num2) // calculate_gcd(num1, num2)
     return lcm
 
 
+# Executed try-except block to check whether the values provided are numeric in nature
+# or not. Also using an if-else condition to check whether the values provided are
+# greater than 0 or not
 try:
     val_1 = int(input("Enter first positive integer: "))
     val_2 = int(input("Enter second positive integer: "))
