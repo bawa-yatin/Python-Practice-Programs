@@ -1,3 +1,6 @@
+
+# Python program to modify a tuple
+
 tuple_items = (23, 18, 6, 12, 19)
 
 # Appending an element to a tuple

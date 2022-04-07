@@ -1,3 +1,6 @@
+
+# Python program to return new set of identical items from two sets
+
 # Approach 1: Using intersection method
 
 set_1 = {10, 25, 45, 55, 75}

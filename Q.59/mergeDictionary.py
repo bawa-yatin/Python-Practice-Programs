@@ -1,3 +1,6 @@
+
+# Merge two dictionaries into one and rename dictionary key name
+
 # Approach 1: Using Pipe(|) Operator
 def merge_dict(first_dict, second_dict):
     res = first_dict | second_dict
@@ -11,7 +14,6 @@ print("After merging dictionaries:", obj1)
 
 
 # Approach 2: Using Update Method
-
 dict1 = {'Bike': 15, 'Cars': 20}
 dict2 = {'Trucks': 7, 'Scooters': 17}
 dict1.update(dict2)

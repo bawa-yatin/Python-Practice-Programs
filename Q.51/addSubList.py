@@ -1,3 +1,7 @@
+
+# Python program to extend nested list by adding sub list with
+# specific index taken from console
+
 initial_list = [['George', 'Mary'], ['Peter', 'Harry']]
 sub_list = ['Smith', 'Paul']
 index_pos = int(input("Enter the position where you want to add the sublist: "))
