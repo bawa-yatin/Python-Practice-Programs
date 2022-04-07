@@ -3,8 +3,7 @@
 # Using "==" operator for comparing the values of both objects and "is" operator to
 # check if both objects are identical in nature
 
-# Approach 1: Basic Approach
-
+# Approach 1: Basic Approach(Using == operator)
 def compare_obj(list1, list2):
     # Checks the value of both objects
     if list1 == list2:
@@ -15,13 +14,14 @@ def compare_obj(list1, list2):
 
 list_1 = ["apple", "orange", "banana", "watermelon"]
 list_2 = ["apple", "orange", "banana", "watermelon"]
-result = compare_obj(list_1, list_2)
+result = compare_obj(list_1, list_2)  # variable holding the response returned after
+# comparing two objects
 print(result)
 
 
-# Approach 2: Using Function
+# Approach 2: Using Function and "is" operator
 def obj_compare(first, second):
-    third = first
+    third = first  # Assigning value of "first" object to "third" object
     if first is third:
         return True
     else:
@@ -30,5 +30,6 @@ def obj_compare(first, second):
 
 list1 = [20, 40, 80, 90]
 list2 = [20, 40, 80, 90, 105]
-res = obj_compare(list1, list2)
+res = obj_compare(list1, list2)  # variable holding the response returned after
+# comparing two objects
 print(res)

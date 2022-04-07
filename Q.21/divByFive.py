@@ -1,7 +1,6 @@
 # Python program to check if an integer is completely divisible by 5 or not
 
 # Approach 1: Using Function
-
 def check_divisible():
     try:
         num_1 = int(input("Enter any positive number: "))

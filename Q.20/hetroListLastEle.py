@@ -10,18 +10,17 @@ class endElement:
 
 
 list_2 = [False, 8, "Hello", 8.09, "John"]
-e1 = endElement()
-res = e1.ele_last(list_2)
+e1 = endElement()  # Creating object of class "endElement"
+res = e1.ele_last(list_2)  # variable holding the response from function "ele_last()"
 print(res)
 
-
-# Approach 2: Reversing the list and printing the first element
+# Approach 2: Reversing the list and printing the first element using reverse() method
 new_list = [3, "John", 6.09, "Adam", True]
 new_list.reverse()
 print("Last element is", new_list[0])
 
 
-# Approach 3: Using function
+# Approach 3: Using function and negative indexing
 def last_element(ele):
     return f"Last element of the list is {ele[-1]}"
 

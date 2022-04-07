@@ -1,10 +1,14 @@
+
+# Python program to return the First Element in a List
+
 numList = [11, 43, 23, 77, 51, 78]
 
 # Approach 1: By simply providing index of first element in square brackets
 print("First element is", numList[0])
 
 # Approach 2: By using slicing syntax, where slicing starts at 0th index and ends at index 1
-firstElement = numList[:1]
+firstElement = numList[:1]  # variable holding the first element of the list by
+# slicing method
 print("First element is", firstElement)
 
 # Approach 3: Using list comprehension

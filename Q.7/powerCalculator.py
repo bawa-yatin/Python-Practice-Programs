@@ -1,4 +1,6 @@
-# Approach 1
+# Power Calculator
+
+# Approach 1: Using exponent operator(**)
 num_1 = 3
 num_2 = 4
 
@@ -11,7 +13,8 @@ def calc_power_num(base, exponent):
     return base ** exponent
 
 
-res = calc_power_num(4, 3)
+res = calc_power_num(4, 3)  # Variable holding the response returned from
+# the function "calc_power_num()"
 print(res)
 
 
@@ -27,6 +30,9 @@ class numPower:
         return pow(self.base, self.exponent)
 
 
+# Object creation of "numPower" class and simultaneously assigning the value to
+# class variable(base, exponent) through constructor method
 np = numPower(5, 3)
-num_power = np.no_power()
+num_power = np.no_power()  # Variable holding the response returned from the
+# class method "no_power()"
 print(num_power)

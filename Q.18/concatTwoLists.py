@@ -1,7 +1,6 @@
 # Python Program to concatenate two integer lists
 
 # Approach 1: Using for loop to append elements of first list into second
-
 list1 = [1, 4, 5, 6, 5]
 list2 = [3, 5, 7, 2, 5]
 
@@ -25,7 +24,6 @@ print("Concatenated list is", result)
 
 # Approach 3: Using built-in function extend() to concatenate elements of two lists
 # extend() takes a single parameter which is an iterable i.e. list, tuple or string
-
 class concatLists:
     def join_lists(self, first_list_ele, sec_list_ele):
         first_list_ele.extend(sec_list_ele)
