@@ -1,3 +1,6 @@
+
+# Python program to perform all basic mathematical operations
+
 class MathOperations:
     def __init__(self):
         self.val_1 = int(input("Enter first value: "))
@@ -25,7 +28,8 @@ class MathOperations:
         return pow(self.val_1, self.val_2)
 
 
-obj1 = MathOperations()
+obj1 = MathOperations()  # Object creation of class to access the methods defined
+# inside it
 print("Sum is", obj1.addition())
 print("Difference is", obj1.subtract())
 print("Product is", obj1.multiply())

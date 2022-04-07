@@ -45,12 +45,11 @@ class sortDataAscDesc:
 
 
 list2 = [25, 15, 45, 75, 35, 86, 65]
-sd = sortDataAscDesc(list2)
-print(sd.ascending_sort())
-print(sd.descending_sort())
+sd = sortDataAscDesc(list2)  # Creating object of class "sortDataAscDesc"
+print(sd.ascending_sort())  # Using class object to access class method "ascending_sort()"
+print(sd.descending_sort()) # Using class object to access class method "descending_sort()"
 
 # Approach 3: Using sort() and sorted() methods
-
 list3 = [17, 79, 56, 12, 51, 45]
 list4 = [56, 75, 89, 12, 21, 99, 101]
 list3.sort()
