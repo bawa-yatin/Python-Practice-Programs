@@ -5,7 +5,8 @@
 # User-defined function to convert the provided input into a camel-case string
 def str_camel_case(value):
     items = value.split()  # Splitting the value and storing it in 'item' variable
-    camel_case_str = items[0].lower()
+    camel_case_str = items[0].lower()  # converting the first letter of first item
+    # to lowercase
     for val in range(1, len(items)):
         camel_case_str += items[val].capitalize()
 

@@ -1,8 +1,6 @@
-
 # Python program that returns the least common multiple (LCM) of two integers
 
 # Approach 1: Basic Approach
-
 # User-defined function to calculate LCM of the numbers provided
 def get_lcm(val1, val2):
     if val1 > val2:
@@ -34,7 +32,6 @@ except ValueError:
 
 
 # Approach 2: Using GCD
-
 # User-defined function to calculate GCD of the numbers provided
 def calculate_gcd(x, y):
     while y:
